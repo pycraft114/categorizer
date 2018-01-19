@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Categorizer",
+  "description": "This extension will categorize your bookmarks",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "background"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  ]
+}
